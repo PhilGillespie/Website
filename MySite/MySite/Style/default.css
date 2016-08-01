@@ -1,0 +1,162 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);
+
+/*@font-face {
+	font-family: 'transpageicons';
+	src:url('../fonts/transpageicons/transpageicons.eot');
+	src:url('../fonts/transpageicons/transpageicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/transpageicons/transpageicons.woff') format('woff'),
+		url('../fonts/transpageicons/transpageicons.ttf') format('truetype'),
+		url('../fonts/transpageicons/transpageicons.svg#transpageicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #fff;
+	background: #333;
+	overflow: hidden;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/* Header Style */
+.transpage-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.1);
+	text-transform: uppercase;
+	position: fixed;
+	width: 100%;
+	font-size: 0.68em;
+	line-height: 2.2;
+	z-index: 50000;
+	top: 0;
+	left: 0;
+}
+
+.transpage-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #fff;
+	display: inline-block;
+}
+
+.transpage-top a:hover {
+	background: rgba(255,255,255,0.2);
+}
+
+.transpage-top span.right {
+	float: right;
+}
+
+.transpage-top span.right a {
+	float: left;
+	display: block;
+}
+
+.transpage-icon:before {
+	font-family: 'transpageicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.transpage-icon-drop:before {
+	content: "\e001";
+}
+.transpage-icon-prev:before {
+	content: "\e004";
+}
+.transpage-icon-archive:before {
+	content: "\e002";
+}
+.transpage-icon-next:before {
+	content: "\e000";
+}
+.transpage-icon-about:before {
+	content: "\e003";
+}
+
+@media screen and (max-width: 25em) { 
+	.transpage-icon span {
+		display: none;
+	}
+}
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+
+
+/************** Top Nav Bar ****************/
+.navbar-nav.row {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+@media (max-width: 768px) {
+    .navbar-nav.row {
+        position:relative;
+        float:right;
+    }
+}
+
+.navbar-link {
+    text-align:center;
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+}
+
+.navbar-block {
+    padding: 0 !important;
+}
+
+.home-link, .home-link:hover, .home-link:focus {
+    background-color:#0ac2d2 !important;
+}
+.about-link, .about-link:hover, .about-link:focus {
+    background-color:#7bb7fa !important;
+}
+.services-link, .services-link:focus, .services-link:hover {
+    background-color:#60d7a9 !important;
+}
+.contact-link, .contact-link:hover, .contact-link:focus {
+    background-color:#fdc162 !important;
+}
+
+.navbar-link.current {
+    font-size: 20px;
+    color: #3c3c3c;
+    font-size:large !important;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+/***************** Contact form *********************/
+.contact-form-container > div {
+    max-width:500px;
+    margin: 15px auto;
+}
+
+.contact-form-container > h1 {
+    text-transform: none;
+}
+
