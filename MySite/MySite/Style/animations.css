@@ -62,25 +62,27 @@
     height: 60px;
     width: 60px;
     margin: auto;
+    text-align: center;
+    padding-top: 10px;
 }
 
-/* initial cube transforms*/
+/*********** initial cube transforms ***************/
 .cube-side-one {
-    background-color:red;
+    background-color:#9c9c9c;
     transform: translateZ(30px);
 }
 
 .cube-side-two {
-    background-color:blue;
+    background-color:#FF807C;
     transform: rotateY(90deg) translateZ(30px);
 }
 
 .cube-side-three {
-    background-color:green;
+    background-color:#B065E8;
     transform: translateZ(-30px);
 }
 
 .cube-side-four {
-    background-color:yellow;
+    background-color:#73B0FF;
     transform: rotateY(-90deg) translateZ(30px);
 }

@@ -129,16 +129,16 @@ a:hover {
 }
 
 .home-link, .home-link:hover, .home-link:focus {
-    background-color:#0ac2d2 !important;
+    background-color:#E8B267 !important;
 }
 .about-link, .about-link:hover, .about-link:focus {
-    background-color:#7bb7fa !important;
+    background-color:#FF807C !important;
 }
 .services-link, .services-link:focus, .services-link:hover {
-    background-color:#60d7a9 !important;
+    background-color:#B065E8 !important;
 }
 .contact-link, .contact-link:hover, .contact-link:focus {
-    background-color:#fdc162 !important;
+    background-color:#73B0FF !important;
 }
 
 .navbar-link.current {

@@ -103,6 +103,5 @@ c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\Umbraco.Mo
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\umbraco.providers.xml
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\Umbraco.Web.UI.xml
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\UmbracoExamine.xml
-c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.csprojResolveAssemblyReference.cache
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.dll
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.pdb
