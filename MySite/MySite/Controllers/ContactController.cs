@@ -16,6 +16,11 @@ namespace MySite.Controllers
             return PartialView("ContactForm", new ContactModel());
         }
 
+        public ActionResult RenderServices()
+        {
+            return PartialView("Services");
+        }
+
         public ActionResult FormPost(ContactModel post)
         {
             ContactModel model = new ContactModel()

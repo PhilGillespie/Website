@@ -290,6 +290,12 @@
     <Content Include="Config\Lang\zh-CN.user.xml" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="media\1001\html5.jpg" />
+    <Content Include="media\1001\html5_big-thumb.jpg" />
+    <Content Include="media\1001\html5_thumb.jpg" />
+    <Content Include="media\1002\html5-2.png" />
+    <Content Include="media\1002\html5-2_thumb.jpg" />
+    <Content Include="media\1002\html5-2_thumb.png" />
     <Content Include="Scripts\modernizr.js" />
     <Content Include="Style\animations.css" />
     <Content Include="Scripts\animations.js" />
@@ -2933,6 +2939,7 @@
     <Content Include="Views\AboutMe.cshtml" />
     <Content Include="Views\Partials\Navigation.cshtml" />
     <Content Include="Views\Partials\ContactForm.cshtml" />
+    <Content Include="Views\Partials\Services.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2945,7 +2952,6 @@
     <Folder Include="App_Data\NuGetBackup\20160731-013349\Umbraco\" />
     <Folder Include="App_Data\NuGetBackup\20160731-013349\Umbraco_Client\" />
     <Folder Include="bin\" />
-    <Folder Include="media\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Umbraco\Config\Create\" />
     <Folder Include="Views\MacroPartials\" />

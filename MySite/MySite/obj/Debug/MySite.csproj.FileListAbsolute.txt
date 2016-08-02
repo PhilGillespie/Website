@@ -105,3 +105,4 @@ c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\Umbraco.We
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\bin\UmbracoExamine.xml
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.dll
 c:\users\phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.pdb
+C:\Users\Phil\documents\visual studio 2013\Projects\MySite\MySite\obj\Debug\MySite.csprojResolveAssemblyReference.cache
