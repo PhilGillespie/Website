@@ -2744,7 +2744,9 @@
     <Content Include="Umbraco_Client\Ui\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
     <Content Include="Umbraco_Client\Ui\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Umbraco_Client\Ui\ui-lightness\jquery-ui.custom.css" />
-    <Content Include="Web.config" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactController.cs" />
@@ -2757,7 +2759,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
-    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
