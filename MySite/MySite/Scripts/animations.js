@@ -113,4 +113,10 @@ var PageTransitions = (function () {
         nextPage: nextPage,
     };
 
+    $('html').removeClass();
+
 })();
+
+$(document).ready(function () {
+    $('html').removeClass();
+});

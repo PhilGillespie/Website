@@ -2,7 +2,7 @@
 
 @using (Html.BeginUmbracoForm<MySite.Controllers.ContactController>("FormPost")){
     <div class="container contact-form-container">
-        <h1><strong>Contact</strong>Me</h1>       
+        <h1 class="main-headline"><strong>Contact</strong>Me</h1>       
         <div class="form-group">
             @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Name" })
         </div>
