@@ -14,7 +14,7 @@ namespace MySite.Controllers
     {
         public ActionResult RenderForm()
         {
-            return PartialView("ContactForm", new ContactModel());
+            return PartialView("ContactForm", new Contact());
         }
 
         public ActionResult RenderServices()
@@ -22,25 +22,16 @@ namespace MySite.Controllers
             return PartialView("Services");
         }
 
-        public ActionResult FormPost(ContactModel post)
+        public ActionResult FormPost(Contact post)
         {
-            var appSettings = ConfigurationManager.AppSettings;
-            ContactModel model = new ContactModel()
+            
+            Contact contact = new Contact()
             {
                 Name = post.Name,
                 Email = post.Email,
                 Message = post.Message
             };
-            SmtpClient client = new SmtpClient(appSettings["SMTPClient"], Int32.Parse(appSettings["SMTPClientPort"]));
-            MailAddress from = new MailAddress("test@test.com");
-            MailAddress to = new MailAddress(appSettings["EmailToAddress"]);
-            MailMessage msg = new MailMessage(from, to);
-            msg.Body = post.Name + " : " + post.Email + " : " + post.Message;
-            msg.Subject = "Message from website";
-            client.Host = "smtp.gmail.com";
-            client.Credentials = new System.Net.NetworkCredential(appSettings["SiteEmailAddress"], appSettings["SiteEmailPassword"]);
-            client.EnableSsl = true;
-            client.Send(msg);
+            contact.SendEmail();            
             return RedirectToCurrentUmbracoPage();
         }
     }

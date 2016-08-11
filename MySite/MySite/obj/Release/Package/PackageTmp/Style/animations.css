@@ -1,0 +1,91 @@
+/* move from / to  */
+
+.pt-page-moveFromLeft {
+	-webkit-animation: moveFromLeft .8s ease both;
+	animation: moveFromLeft .8s ease both;
+}
+
+/* rotate sides first and scale */
+
+.pt-page-rotateLeftSideFirst {
+	-webkit-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+	-webkit-animation: rotateLeftSideFirst .8s both ease-in;
+	animation: rotateLeftSideFirst .8s both ease-in;
+}
+
+/********************************* keyframes **************************************/
+
+/* move from / to  */
+
+@-webkit-keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes rotateLeftSideFirst {
+	0% { }
+	40% { -webkit-transform: rotateY(-15deg); opacity: .8; -webkit-animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(0.8) translateZ(-200px); opacity:0; }
+}
+@keyframes rotateLeftSideFirst {
+	0% { }
+	40% { -webkit-transform: rotateY(-15deg); transform: rotateY(-15deg); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(0.8) translateZ(-200px); transform: scale(0.8) translateZ(-200px); opacity:0; }
+}
+
+/* animation delay classes */
+.pt-page-delay200 {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+/* cube animation*/
+.cube {
+    position: relative;
+    height: 60px;
+    width : 60px;
+    margin: 100px auto 50px auto;
+    transform-style: preserve-3d;
+    transform: rotateY(30deg) rotateX(-20deg);
+}
+
+.cube > div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+.cube-side-one, .cube-side-two, .cube-side-three, .cube-side-four {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cube > div {
+    background-color:gray;
+    opacity:0.5;
+    border:1px solid black;
+}
+
+/*********** initial cube transforms ***************/
+
+.cube-side-one {
+    transform: translateZ(30px);
+}
+
+.cube-side-two {
+    transform: rotateY(90deg) translateZ(30px);
+}
+
+.cube-side-three {
+    transform: translateZ(-30px);
+}
+
+.cube-side-four {
+    transform: rotateY(-90deg) translateZ(30px);
+}
